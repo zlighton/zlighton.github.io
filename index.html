@@ -1,42 +1,75 @@
 <!DOCTYPE html>
-
-<!-- CSS Stylesheets with Relative Paths -->
-
-<html lang="en-us">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Zach Lighton's Bio Page</title>
 
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Bootstrap-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!--Individual CSS-->
+  <link rel="stylesheet" href="style.css">
 </head>
+<body background="IehB7.png">
+  <!--Navbar-->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Zach Lighton's Bio Page</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="mailto:zlighton@gmail.com">Email</a></li>
+          <li><a href="https://github.com/zlighton">Github</a></li>
+          <li><a href="#">Portfolio (Coming Soon)</a></li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-<body>
+  <!--image-->
+  <img src="P6.jpg" alt="Zach Lighton" style="width:400px;height:500px;">
 
-  <header>
-    <h1>Zach Lighton's Bio Page</h1>
-  </header>
+  <!--Header 1-->
+  <div class="page-header">
+      <h1>
+        <p>Zach Lighton</p>
+        <p><small>Studying Data Science at UCSD Extension's Bootcamp</small></p>
+      </h1>
+  </div>
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <h2 id="bio-name">Zach Lighton</h2>
-        <img id="bio-image" src="P6.jpg" alt="Zach Lighton" height=300 width=250>
-      </section>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <aside id="contact-info">
-      <h2>Contact Info</h2>
+  <!--Contact info-->
+  <aside id="contact-info">
+    <h2>Contact Info
       <ul>
         <li><strong>Email:</strong> <a href="mailto:zlighton@gmail.com">zlighton@gmail.com</a></li>
         <li><strong>Github:</strong> <a href="https://github.com/zlighton">zlighton</a></li>
         <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
       </ul>
-    </aside>
-  </main>
-
+    </h2>
+  </aside>
 </body>
-
 </html>
